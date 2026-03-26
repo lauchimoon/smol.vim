@@ -24,9 +24,11 @@ syntax keyword smolType
 
 syntax match smolNumber "\v<\d+>"
 syntax match smolNumber "\v<\d+\.\d+>"
+syntax region smolComment start="//" end="$"
 syntax region smolString start=/"/ skip=/\\"/ end=/"/ oneline
 syntax region smolChar start=/'/ skip=/\\'/ end=/'/ oneline
 
+highlight default link smolComment Comment
 highlight default link smolString String
 highlight default link smolChar String
 highlight default link smolNumber Number
