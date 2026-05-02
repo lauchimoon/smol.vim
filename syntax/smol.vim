@@ -21,6 +21,10 @@ syntax keyword smolType
     \ string
     \ char
     \ void
+    \ vec
+
+syntax keyword smolBuiltin
+    \ len
 
 syntax match smolNumber "\v<\d+>"
 syntax match smolNumber "\v<\d+\.\d+>"
@@ -35,3 +39,4 @@ highlight default link smolNumber Number
 highlight default link smolBool Boolean
 highlight default link smolType Type
 highlight default link smolKeywords Keyword
+highlight default link smolBuiltin Identifier
